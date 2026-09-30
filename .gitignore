@@ -44,3 +44,8 @@ xcuserdata/
 .tmp/
 temp/
 *.tmp
+
+# Parsel Takip
+parsel/parsel.db
+__pycache__/
+*.pyc

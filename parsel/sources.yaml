@@ -1,0 +1,58 @@
+# Her kaynak için CSS seçicileri burada tanımlanır.
+# ÖNEMLİ: Aşağıdaki kaynaklar ÖRNEK şablondur ve gerçek sitelerde TEST EDİLMEDİ.
+# Sitelerin HTML yapısı değişir. Tarayıcının "Öğeyi İncele" aracıyla seçicileri kontrol edip
+# düzeltin, sonra enabled: true yapın. Sitelerin kullanım şartlarını ve robots.txt'ini
+# kontrol etmek size aittir. robots.txt izin vermezse kaynak otomatik atlanır.
+#
+# Alanlar:
+#   item:   Her ilanı saran öğenin seçicisi
+#   fields: title / url / price / area / location / zoning / deadline
+#           her biri "sel" (CSS), isteğe bağlı "attr" (ör. href) ve "regex" alabilir
+#   start_urls: {page} yazan yer sayfa numarasıyla değiştirilir
+sources:
+  - name: Emlakjet (örnek şablon)
+    enabled: false
+    type: satilik
+    delay: 4
+    max_pages: 3
+    start_urls:
+      - "https://www.emlakjet.com/satilik-arsa/?sayfa={page}"
+    item: "div.listing-item"
+    fields:
+      title: { sel: "h3" }
+      url: { sel: "a", attr: "href" }
+      price: { sel: ".price" }
+      area: { sel: ".area" }
+      location: { sel: ".location" }
+
+  - name: Hepsiemlak (örnek şablon)
+    enabled: false
+    type: satilik
+    delay: 4
+    max_pages: 3
+    start_urls:
+      - "https://www.hepsiemlak.com/satilik/arsa?page={page}"
+    item: "li.listing-item"
+    fields:
+      title: { sel: "h3" }
+      url: { sel: "a", attr: "href" }
+      price: { sel: ".list-view-price" }
+      area: { sel: ".list-view-size" }
+      location: { sel: ".list-view-location" }
+
+  - name: TOKİ ihaleleri (örnek şablon)
+    enabled: false
+    type: ihale
+    delay: 4
+    max_pages: 2
+    start_urls:
+      - "https://www.toki.gov.tr/ihale-ilanlari"
+    item: "div.ihale-item"
+    fields:
+      title: { sel: "a" }
+      url: { sel: "a", attr: "href" }
+      location: { sel: ".il" }
+      deadline: { sel: ".tarih" }
+
+  # Milli Emlak, belediye ihaleleri, UYAP icra satışları ve EKAP için de
+  # aynı şekilde kaynak ekleyin. Giriş (login) gerektiren sayfalar desteklenmez.
