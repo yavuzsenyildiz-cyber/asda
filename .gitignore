@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+*.lock
+package-lock.json
+yarn.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Build outputs
+dist/
+build/
+out/
+
+# iOS
+ios/Pods/
+ios/Podfile.lock
+DerivedData/
+.xcworkspace/xcuserdata/
+*.xcworkspace
+
+# Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+
+# Temp files
+.tmp/
+temp/
+*.tmp

@@ -1,0 +1,17 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		/* Begin PBXFileReference section */
+		5F1C2B1B2B0A1E0C00F1E2D3 /* RemotePCApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemotePCApp/RemotePCApp.swift; sourceTree = "<group>"; };
+		5F1C2B1C2B0A1E0C00F1E2D3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemotePCApp/Views/ContentView.swift; sourceTree = "<group>"; };
+		5F1C2B1D2B0A1E0C00F1E2D3 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemotePCApp/Views/LoginView.swift; sourceTree = "<group>"; };
+		5F1C2B1E2B0A1E0C00F1E2D3 /* ControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemotePCApp/Views/ControlView.swift; sourceTree = "<group>"; };
+		5F1C2B1F2B0A1E0C00F1E2D3 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemotePCApp/Views/SettingsView.swift; sourceTree = "<group>"; };
+		5F1C2B202B0A1E0C00F1E2D3 /* PCViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemotePCApp/ViewModels/PCViewModel.swift; sourceTree = "<group>"; };
+	};
+	rootObject = 5F1C2B0A2B0A1E0C00F1E2D3;
+}
